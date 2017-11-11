@@ -1,27 +1,24 @@
-# TutorialSuperHeroe
+# [TutorialSuperHeroe](https://angular.io/tutorial)
+El tutorial Tour de Hereo cubre los fundamentos de Angular. En este tutorial construiras una app que ayudara a una agencia de personal a administrar su establo de heroes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+Esta aplicacion bacica tiene muchas de las caracteristicas que esperarias encontrar en un aplicacion basada en datos. Adquiere y muestra una lista de heroes, edita los detalles de un heroe y navega entre diferentes vista de datos heroicos.
 
-## Development server
+AL final de este tutorial seras capaz de hacer lo siguiente:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Usar al directivas angular incorporadas para mostrar y ocultar elementos y desplegar una lista de datos de heroes.
 
-## Code scaffolding
+2. Crear componentes angular para deplegar los detalle del heroe y mostrar un serie de heroes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Usar un enlace de datos de una via (ONE-WAY BINDING), para datos de solo lectura.
 
-## Build
+4. Vincular metodos de componentes a eventos de usuario, tales como pulsaciones de teclas y clicks.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+5. Permitir que usuarios seleccionen un heroe de una lista maestra y pueda editarlo en la vista de detalles.
 
-## Running unit tests
+6. Formatear datos con tuberias.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+7. Crear  un servicio compartido para construir los heroes
 
-## Running end-to-end tests
+8, Usar enrutamiento para navegar entre diferentes vistas y sus componentes.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
