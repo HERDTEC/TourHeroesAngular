@@ -143,6 +143,38 @@ body, input[text], button {
 }
 ```
 
+## El edito de heroe
 
+La aplicacion ahora tiene un titulo basico. Proximamente crearemos un nuevo componente para desplegar la informacion del heroe y el lugar de ese componente en la aplication shell.
 
+### Crear el componente heroes 
+
+Usando el Angular CLI, generamos un nuevo componente llamado `heroes`.
+```bash
+ng generate component heroes
+```
+CLI creo una nueva carpeta, `src/app/heroes` y genera el arbol de archivos de HeroesComponent.
+
+La class HeroesComponent es como la siguiente
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
+})
+export class HeroesComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+```
+Siempre importa Component de la libreria core Angular y anota la clase de componente con @Component.
+
+@Component es una funcion decoradora que especifica los metadatos angular para el componente
 
