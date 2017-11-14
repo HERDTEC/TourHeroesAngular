@@ -28,8 +28,28 @@ Despues de completar todo los pasos del tutorial, la aplicacion final se mirar c
 
 #### Que construiras?
 Aqui una idea visual de a donde conduce este tutorial, comenzando con la vista del Dashboard y los heroes mas heroicos.
-![Sin titulo](https://angular.io/generated/images/guide/toh/heroes-dashboard-1.png)
+![Dashboard](https://angular.io/generated/images/guide/toh/heroes-dashboard-1.png)
 
 Puedes hacer click en los dos enlaces sobre el Dashboard y Heroes para navegar entre esta vista de Dashboard y una vista de Heroes.
 
-Si haces click en el dashboard de heroes
+Si haces click en el heroe Magneta, el routes abre la vista de los detalles del heroe donde usted puede cambiar el nombre del heroe.
+
+![Detalles del Heroe](https://angular.io/generated/images/guide/toh/hero-details-1.png)
+
+Al hacer click en el boton Back regresara al Dashboard.  Los enlaces en la parte superior te llevan a cualquier de las vistas principales. Si tu haces click en Heroes, la app desplegara la vista de la lista maestra de heroes.
+
+![Lista Maestra de Heroes](https://angular.io/generated/images/guide/toh/heroes-list-2.png)
+
+Cuando haces click en un nombre de heroe diferente, el mini detalle de solo lectura debajo de la lita refleja la nueva seleccion.
+
+Usted puede hacer click en el botton "View Details" para explorar en los detalles editables de el heroe seleccionado.
+
+El siguiente diagrama captura todas las opciones de navegacion.
+
+![Diagrama de navegacion](https://angular.io/generated/images/guide/toh/nav-diagram.png)
+
+
+Aqui esta la aplicacion en accion.
+
+![Aplicacion](https://angular.io/generated/images/guide/toh/toh-anim.gif)
+
