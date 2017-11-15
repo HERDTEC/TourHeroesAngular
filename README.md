@@ -387,3 +387,57 @@ declarations: [
 ]
 ```
 > Note que AppModule declara ambos componentes en la aplicacion AppComponent y HeroesComponent.
+
+## Desplegar una lista de Heroes
+
+En esta pagina, expadiras l aplicacion Tour of Heroes para mostrar una lista de heroes, y permitir a los usuarios selccionar un heroe y desplegar los detalles de heroe.
+
+
+### Crear un mock de Heroes
+Necesitas alguno heroes para mostrar.
+Eventualmente lo obtendras desde un servidor de datos remoto. Por ahora ty crearas un mock de heroes y pretendera que proviene de un servidor.
+
+Crea un archivo llamado mock-heroes.ts en la carpeta *src/app* . Defina una constante HEROES como un arreglo de diez heroes y esportelos. El archivo deberi verse asi:
+
+*src/app/mock-heroes.ts*
+___
+
+```typescript
+import { Hero } from './hero';
+
+export const HEROES: Hero[] = [
+  { id: 11, name: 'Mr. Nice' },
+  { id: 12, name: 'Narco' },
+  { id: 13, name: 'Bombasto' },
+  { id: 14, name: 'Celeritas' },
+  { id: 15, name: 'Magneta' },
+  { id: 16, name: 'RubberMan' },
+  { id: 17, name: 'Dynama' },
+  { id: 18, name: 'Dr IQ' },
+  { id: 19, name: 'Magma' },
+  { id: 20, name: 'Tornado' }
+];
+```
+
+### Desplegando heroes
+EEsta a punto de desplega la lista de heroes al inicio de HeroesComponent
+
+Abra la clase ddel archivo HeroesComponent e importe el mock de heroes
+
+*src/app/heroes/heroes.component.ts (import HEROES)*
+___
+```Typescript
+import { HEROES } from '../mock-heroes';
+```
+
+Agrega la propiedad heroes a la clase HeroesComponent para hacer binding.
+
+*src/app/heroes/heroes.component.ts (class)*
+___
+```Typescript
+heroes = HEROES;
+```
+
+#### Listar Heroes con *ngFor
+
+Abra el archivo del template de HeroesComponent
